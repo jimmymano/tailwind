@@ -1,0 +1,23 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css":"tailwindcss build -i src/styles.css -o ./public/styles.css --watch "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmymano/tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimmymano/tailwind/issues"
+  },
+  "homepage": "https://github.com/jimmymano/tailwind#readme",
+  "dependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
