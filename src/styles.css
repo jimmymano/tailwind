@@ -47,6 +47,16 @@
 }
 
 @font-face{
-    font-family:"vermin";
-    src: url("../public/fonts/vermin/vermin.ttf")
+    font-family:"flashback";
+    src: url("../public/fonts/flash_back/flashback.ttf")
+}
+
+@font-face{
+    font-family:"rocket";
+    src: url("../public/fonts/rocket-rinder-font/RocketRinder-yV5d.ttf")
+}
+
+@font-face{
+    font-family:"edit";
+    src: url("../public/fonts/edit_undo_line/edunline.ttf")
 }
