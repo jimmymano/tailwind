@@ -532,34 +532,17 @@ video {
   margin-top: 2rem;
 }
 
-.border-0{
-  border-width: 0px;
-}
-
-.border-2{
-  border-width: 2px;
+.border{
+  border-width: 1px;
 }
 
 .border-b{
   border-bottom-width: 1px;
 }
 
-.border-gray-200{
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
 .border-gray-600{
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
-}
-
-.p-4{
-  padding: 1rem;
-}
-
-.p-32{
-  padding: 8rem;
 }
 
 .p-10{
@@ -571,16 +554,6 @@ video {
   padding-right: 4rem;
 }
 
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -590,9 +563,40 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.text-9xl{
-  font-size: 8rem;
-  line-height: 1;
+.font-brat{
+  font-family: brat, sans-serif;
+}
+
+.font-commando{
+  font-family: commando, sans-serif;
+}
+
+.font-indelible{
+  font-family: indelible, sans-serif;
+}
+
+.font-lazer84{
+  font-family: lazer84, sans-serif;
+}
+
+.font-outrun{
+  font-family: outrun, sans-serif;
+}
+
+.font-pacman{
+  font-family: pacman, sans-serif;
+}
+
+.font-roadrage{
+  font-family: roadrage, sans-serif;
+}
+
+.font-streamster{
+  font-family: streamster, sans-serif;
+}
+
+.text-jimmy{
+  font-size: 5rem;
 }
 
 .font-bold{
@@ -603,42 +607,97 @@ video {
   font-weight: 600;
 }
 
-.text-yellow-800{
-  --tw-text-opacity: 1;
-  color: rgb(133 77 14 / var(--tw-text-opacity));
-}
-
-.text-yellow-200{
-  --tw-text-opacity: 1;
-  color: rgb(254 240 138 / var(--tw-text-opacity));
-}
-
-.text-yellow-500{
-  --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
-}
-
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-red-100{
+.text-primary{
   --tw-text-opacity: 1;
-  color: rgb(254 226 226 / var(--tw-text-opacity));
+  color: rgb(113 219 212 / var(--tw-text-opacity));
 }
 
-.text-red-900{
+.text-synth-aqua{
   --tw-text-opacity: 1;
-  color: rgb(127 29 29 / var(--tw-text-opacity));
+  color: rgb(45 226 230 / var(--tw-text-opacity));
 }
 
-.text-blue-900{
+.text-synth-darkblue{
   --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity));
+  color: rgb(38 20 71 / var(--tw-text-opacity));
 }
 
-.text-purple-900{
+.text-synth-darkerblue{
   --tw-text-opacity: 1;
-  color: rgb(88 28 135 / var(--tw-text-opacity));
+  color: rgb(13 2 33 / var(--tw-text-opacity));
+}
+
+.text-synth-orange{
+  --tw-text-opacity: 1;
+  color: rgb(255 108 17 / var(--tw-text-opacity));
+}
+
+.text-synth-red{
+  --tw-text-opacity: 1;
+  color: rgb(255 56 100 / var(--tw-text-opacity));
+}
+
+.text-synth-pink{
+  --tw-text-opacity: 1;
+  color: rgb(246 1 157 / var(--tw-text-opacity));
+}
+
+.text-synth-fuschia{
+  --tw-text-opacity: 1;
+  color: rgb(199 36 177 / var(--tw-text-opacity));
+}
+
+/* 8 Fonts 6/9/23 */
+
+@font-face{
+  font-family:"pacman";
+
+  src: url("../public/fonts/pac-man-logo/pac-man-logo.ttf")
+}
+
+@font-face{
+  font-family:"outrun";
+
+  src: url("../public/fonts/outrun_future/outrun_future.otf")
+}
+
+@font-face{
+  font-family:"brat";
+
+  src: url("../public/fonts/brat/Brat.ttf")
+}
+
+@font-face{
+  font-family:"commando";
+
+  src: url("../public/fonts/commando/commando.ttf")
+}
+
+@font-face{
+  font-family:"lazer84";
+
+  src: url("../public/fonts/lazer84/Lazer84.ttf")
+}
+
+@font-face{
+  font-family:"indelible";
+
+  src: url("../public/fonts/indelible/Indelible.otf")
+}
+
+@font-face{
+  font-family:"roadrage";
+
+  src: url("../public/fonts/road_rage/Road_Rage.otf")
+}
+
+@font-face{
+  font-family:"streamster";
+
+  src: url("../public/fonts/streamster/Streamster.ttf")
 }
