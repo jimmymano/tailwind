@@ -45,3 +45,8 @@
     font-family:"streamster";
     src: url("../public/fonts/streamster/Streamster.ttf")
 }
+
+@font-face{
+    font-family:"vermin";
+    src: url("../public/fonts/vermin/vermin.ttf")
+}

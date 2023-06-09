@@ -1,5 +1,3 @@
-@config "../tailwind.config.js";
-
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
@@ -424,7 +422,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after{
+*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -474,7 +472,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop{
+::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -524,132 +522,127 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mt-12{
+.mt-12 {
   margin-top: 3rem;
 }
 
-.mt-8{
+.mt-8 {
   margin-top: 2rem;
 }
 
-.border{
+.border {
   border-width: 1px;
 }
 
-.border-b{
+.border-b {
   border-bottom-width: 1px;
 }
 
-.border-gray-600{
+.border-gray-600 {
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
-.p-10{
+.p-10 {
   padding: 2.5rem;
 }
 
-.px-16{
+.px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
 }
 
-.py-12{
+.py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.pb-2{
+.pb-2 {
   padding-bottom: 0.5rem;
 }
 
-.font-brat{
+.font-brat {
   font-family: brat, sans-serif;
 }
 
-.font-commando{
+.font-commando {
   font-family: commando, sans-serif;
 }
 
-.font-indelible{
+.font-indelible {
   font-family: indelible, sans-serif;
 }
 
-.font-lazer84{
+.font-lazer84 {
   font-family: lazer84, sans-serif;
 }
 
-.font-outrun{
+.font-outrun {
   font-family: outrun, sans-serif;
 }
 
-.font-pacman{
+.font-pacman {
   font-family: pacman, sans-serif;
 }
 
-.font-roadrage{
+.font-roadrage {
   font-family: roadrage, sans-serif;
 }
 
-.font-streamster{
+.font-streamster {
   font-family: streamster, sans-serif;
 }
 
-.text-jimmy{
+.font-vermin {
+  font-family: vermin, sans-serif;
+}
+
+.text-jimmy {
   font-size: 5rem;
 }
 
-.font-bold{
-  font-weight: 700;
-}
-
-.font-semibold{
+.font-semibold {
   font-weight: 600;
 }
 
-.text-gray-500{
+.text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-primary{
+.text-primary {
   --tw-text-opacity: 1;
   color: rgb(113 219 212 / var(--tw-text-opacity));
 }
 
-.text-synth-aqua{
+.text-synth-aqua {
   --tw-text-opacity: 1;
   color: rgb(45 226 230 / var(--tw-text-opacity));
 }
 
-.text-synth-darkblue{
+.text-synth-darkblue {
   --tw-text-opacity: 1;
   color: rgb(38 20 71 / var(--tw-text-opacity));
 }
 
-.text-synth-darkerblue{
+.text-synth-darkerblue {
   --tw-text-opacity: 1;
   color: rgb(13 2 33 / var(--tw-text-opacity));
 }
 
-.text-synth-orange{
+.text-synth-fuschia {
   --tw-text-opacity: 1;
-  color: rgb(255 108 17 / var(--tw-text-opacity));
+  color: rgb(199 36 177 / var(--tw-text-opacity));
 }
 
-.text-synth-red{
-  --tw-text-opacity: 1;
-  color: rgb(255 56 100 / var(--tw-text-opacity));
-}
-
-.text-synth-pink{
+.text-synth-pink {
   --tw-text-opacity: 1;
   color: rgb(246 1 157 / var(--tw-text-opacity));
 }
 
-.text-synth-fuschia{
+.text-synth-red {
   --tw-text-opacity: 1;
-  color: rgb(199 36 177 / var(--tw-text-opacity));
+  color: rgb(255 56 100 / var(--tw-text-opacity));
 }
 
 /* 8 Fonts 6/9/23 */
@@ -700,4 +693,10 @@ video {
   font-family:"streamster";
 
   src: url("../public/fonts/streamster/Streamster.ttf")
+}
+
+@font-face{
+  font-family:"vermin";
+
+  src: url("../public/fonts/vermin/vermin.ttf")
 }

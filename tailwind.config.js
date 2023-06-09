@@ -29,6 +29,7 @@ module.exports = {
       roadrage:['roadrage','sans-serif'],
       streamster:['streamster','sans-serif'],
       commando:['commando','sans-serif'],
+      vermin:['vermin','sans-serif'],
     }},
   },
   plugins: [],
