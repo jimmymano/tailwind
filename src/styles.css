@@ -60,3 +60,30 @@
     font-family:"edit";
     src: url("../public/fonts/edit_undo_line/edunline.ttf")
 }
+
+.card{
+    @apply relative bg-synth-darkblue rounded-lg overflow-hidden shadow-md
+}
+
+.badge{
+    @apply absolute  top-0 ml-2 mt-2 text-synth-pink text-5xl font-brat
+}
+
+.cardimg{
+    @apply w-full object-cover 
+}
+
+.cardhover{
+    @apply transform hover:scale-125 transition ease-out duration-300 overflow-hidden
+}
+
+.cardtitle{
+    @apply font-bold text-synth-orange font-rocket tracking-widest
+}
+
+.btn{
+    @apply rounded-full py-2 px-9  text-3xl  cursor-pointer -tracking-wider
+}
+.buttonhover{
+    @apply transition ease-out duration-500
+}
