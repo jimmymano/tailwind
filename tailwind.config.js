@@ -20,7 +20,11 @@ module.exports = {
         pink:'#F6019D',
         fuschia:'#C724B1',
       },},
+      letterSpacing:{
+        big:'.75rem'
+      },
     fontFamily:{
+      vcr:['vcr','sans-serif'],
       pacman:['pacman','sans-serif'],
       outrun:['outrun','sans-serif'],
       brat:['brat','sans-serif'],

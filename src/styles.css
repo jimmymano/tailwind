@@ -5,6 +5,12 @@
 @tailwind utilities;
 
 /* 8 Fonts 6/9/23 */
+
+@font-face{
+    font-family:"vcr";
+    src: url("../public/fonts/vcr_osd_mono/vcr.ttf")
+}
+
 @font-face{
     font-family:"pacman";
     src: url("../public/fonts/pac-man-logo/pac-man-logo.ttf")
@@ -62,7 +68,7 @@
 }
 
 .card{
-    @apply relative bg-synth-darkblue rounded-lg overflow-hidden shadow-md
+    @apply relative bg-synth-darkerblue rounded-lg overflow-hidden shadow-md
 }
 
 .badge{
@@ -82,7 +88,7 @@
 }
 
 .btn{
-    @apply rounded-full py-2 px-9  text-3xl  cursor-pointer -tracking-wider
+    @apply rounded-full px-24  text-9xl  cursor-pointer -tracking-wider
 }
 .buttonhover{
     @apply transition ease-out duration-500
