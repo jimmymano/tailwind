@@ -81,7 +81,7 @@
 }
 
 .imgcontainer{
-    @apply flex flex-col justify-evenly  mx-3.5 my-6 md:mx-32
+    @apply   mx-3.5 my-6 md:mx-32
 }
 
 .img{
@@ -172,3 +172,13 @@
     @apply p-2
 }
 
+/* Kanban Styles */
+.dragcolumn{
+    @apply flex flex-1 flex-col p-5 m-2  border-white border-2
+}
+.dragitemlist{
+@apply font-vcr text-2xl
+}
+.dragitem{
+@apply m-auto bg-white bg-opacity-70 mb-2 p-2 w-full text-black
+}

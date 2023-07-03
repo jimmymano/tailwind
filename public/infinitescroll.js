@@ -19,6 +19,7 @@ for(const key in attributes){
 }
 
 
+
 //Check if all images were loaded
 function imageLoaded(){
 
@@ -87,6 +88,7 @@ window.addEventListener('scroll',() =>{
 
 // On Load
 getPhotos()
+
 
 //alt descript
 //links.html
