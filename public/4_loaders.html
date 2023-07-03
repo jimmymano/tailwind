@@ -1,0 +1,127 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Examples Index</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="img//favicon.ico">
+    </head>
+    <body class="max-h-screen " style="background-image: url(img/grid-bg.jpg);">
+    <div class=" flex justify-center items-center  nav relative top-36 left-0 right-0 bottom-0  ">
+    <!-- Nav Sections  -->
+        <!--Hide/Show Class  -->
+        <span class="group">
+            <a href="1_hideshow.html" class="m-4 group-hover:text-synth-orange">Hide/Show</a>
+        </span>
+        <!--Fonts  -->
+        <span class="group">
+            <a href="2_fonts.html" class="m-4 group-hover:text-synth-orange">Fonts</a>
+        </span>
+        <!--Cards  -->
+        <span class="group">
+            <a href="3_cards.html" class="m-4 group-hover:text-synth-orange">Cards</a>
+        </span>
+        <!--Loaders  -->
+        <span class="group">
+            <a href="4_loaders.html" class="m-4 group-hover:text-synth-orange">Loaders</a>
+        </span>
+        <!--Forms  -->
+        <span class="group">
+            <a href="5_forms.html" class="m-4 group-hover:text-synth-orange">Forms</a>
+        </span>
+    
+    </div>
+
+    <!-- Content Wrapper -->
+    <main class="max-h-screen"">
+        <div class="max-h-screen">
+
+        
+        <!-- Main Content -->
+            
+                <h1 class="maincontentheader h-1/6">Cards</h1>
+                <div class="flex justify-evenly  h-4/6">
+                    <!-- Card 1 -->
+                    <div class="card cardhover text-center  m-2 group  ">
+                        <img src="img/5.jpg" alt="" class="cardimg  opacity-90">
+                        <div class="m-4 absolute bottom-2 flex flex-col">
+                            <span class="font-streamster text-7xl font-bold text-white ">Card Title</span>
+                            <span class="text-xl hidden ">Card Description</span>
+                        </div>
+                        <div class=" closebtn">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </span>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card cardhover  text-center m-2 group">
+                        <img src="img/grid-bg.jpg" alt="" class="cardimg">
+                        <div class=" relative bottom-20 left-0 m-auto w-full text-center">
+                            <span class=" font-edit text-5xl text-synth-fuschia ">Card Title</span>
+                            <span class="hidden">Card Description</span>
+                        </div>
+                        <div class=" closebtn">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class= "card m-2 opacity-90 cardhover group " style="background-image: url(img/3d-wireframe-grid-room-background-vector_53876-169148.jpg);">
+                        <div class="flex justify-center items-center h-5/6">
+
+                            <img src="img/1.jpg" alt="" class="w-5/6 rounded-lg bg-cover">
+                        </div>
+                        <div class="text-center">
+                            <span class="text-white text-7xl font-enikusu">Card</span>
+                        </div>
+                        <div class="closebtn">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                              </span>
+                        </div>
+
+                </div>
+
+                
+
+                </div>
+
+                
+        </div>
+            
+    </main>
+
+
+
+
+      
+
+
+
+
+
+</body>
+<script  defer="defer" src="script.js"></script>
+<script  defer="defer" src="index.js"></script>
+      <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
+  <script>
+      AOS.init({
+    delay: 200, // values from 0 to 3000, with step 50ms
+    duration: 1500, // values from 0 to 3000, with step 50ms
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them 
+  });
+    </script>
+</html>

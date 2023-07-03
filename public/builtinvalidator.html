@@ -1,0 +1,26 @@
+                                                            <!-- Built In Validation -->
+                                                            <div class="formcontainer hidden"  style="background-image: url(img/neon-synthwave-grid-lines-wallpaper-f990b8ed81cafd4b4697a80f9001f6bd.jpg)">
+                                                                <h1 class="label text-5xl text-center font-outrun">Form Validation </h1>
+                                                                <form class="form" >
+                                                                    
+                                                                    <div id="field" class="field ">
+        
+                                                                        <label for="firstname" class="label " >Min/Max Length:</label><br>
+                                                                        <input type="text" id="firstname2" name="firstname" class="input" required minlength="4" maxlength="100"> <br>
+                                                                    </div>
+        
+                                                                    <div id="field" class="field ">
+        
+                                                                        <label for="firstname" class="label " >Password:</label><br>
+                                                                        <input type="password" id="firstname2" name="firstname" class="input" required minlength="4" maxlength="100" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="Please include at least uppercase, 1 lowercase, and 1 number"> <br>
+                                                                    </div>
+        
+                                                                    <div id="field" class="field ">
+        
+                                                                        <label for="firstname" class="label " >Telephone:</label><br>
+                                                                        <input type="tel" id="firstname2" name="firstname" class="input" required placeholder="[num]{numAmount}" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br>
+                                                                    </div>
+        
+                                                                    <button type="submit"  id="button2" class="submitbtn mb-4" >Submit</button>
+                                                                </form>
+                                                            </div>

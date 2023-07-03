@@ -67,16 +67,34 @@
     src: url("../public/fonts/edit_undo_line/edunline.ttf")
 }
 
-.card{
-    @apply relative bg-synth-darkerblue rounded-lg overflow-hidden shadow-md
+@font-face{
+    font-family:"enikusu";
+    src: url("../public/fonts/enikusu/enikusu.ttf")
 }
 
-.badge{
-    @apply absolute  top-0 ml-2 mt-2 text-synth-pink text-5xl font-brat
+.maincontentheader{
+    @apply text-center text-8xl text-synth-aqua font-edit 
+}
+
+.card{
+    @apply relative overflow-hidden max-w-xs
+}
+
+.imgcontainer{
+    @apply flex flex-col justify-evenly  mx-3.5 my-6 md:mx-32
+}
+
+.img{
+    @apply m-3
+}
+
+
+.closebtn{
+    @apply absolute bg-transparent  top-0 right-2 ml-2 mt-2 text-synth-pink text-5xl font-brat opacity-0 group-hover:opacity-100 transition ease-in border-2 rounded-full border-white
 }
 
 .cardimg{
-    @apply w-full object-cover 
+    @apply w-full h-full object-cover 
 }
 
 .cardhover{
@@ -84,7 +102,7 @@
 }
 
 .cardtitle{
-    @apply font-bold text-synth-orange font-rocket tracking-widest
+    @apply font-bold text-4xl text-white font-rocket tracking-widest
 }
 
 .btn{
@@ -93,3 +111,64 @@
 .buttonhover{
     @apply transition ease-out duration-500
 }
+
+.overlay{
+    @apply absolute h-full w-full opacity-0 transition ease-in bg-synth-orange top-0 bottom-0 left-0 right-0 hover:opacity-75
+}
+.overlaytext{
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+}
+.techiconanimation{
+    @apply hover:scale-125 transition duration-150
+}
+
+.formcontainer{
+    @apply bg-cover bg-center  h-full justify-center items-center w-full pt-6
+}
+
+.formcontainertwo{
+    @apply bg-cover bg-center hidden opacity-90 border-white border-2  h-full w-1/2 flex justify-center m-auto items-center 
+}
+.form2{
+    @apply w-4/5  text-2xl text-white font-vcr h-4/5  p-4
+}
+.form3{
+    @apply w-full  text-2xl text-white font-vcr h-full  bg-synth-darkblue border-white border-4
+}
+.form{
+    @apply w-4/5  text-2xl text-white font-vcr h-full p-10 w-4/6 m-auto
+}
+
+
+.submitbtn{
+ @apply  w-full bg-transparent p-3 mt-8 hover:bg-synth-fuschia transition ease-in border-white border-2 rounded-xl
+}
+
+.submitbtn2{
+    @apply  w-full bg-transparent p-3 mt-8 hover:bg-synth-fuschia transition ease-in border-white border-2 
+   }
+
+.label{
+    @apply p-16 text-white
+}
+
+.input{
+ @apply w-full p-2 rounded-xl bg-transparent border-white border-2 valid:border-green-400 invalid:border-synth-red
+}
+
+.errorcontainer{
+    @apply w-full p-3 bg-transparent border-white border-2  valid:border-green-400 invalid:border-synth-red
+   }
+
+.input2{
+    @apply w-full p-2  border-white border-2 bg-synth-pink placeholder-white bg-transparent  valid:border-green-400 invalid:border-synth-red
+   }
+/* NavBar */
+.nav{
+    @apply w-full m-auto text-center text-3xl font-vcr text-white relative top-0 md:top-20 left-0 right-0 bottom-0  
+}
+
+.nav>span{
+    @apply p-2
+}
+

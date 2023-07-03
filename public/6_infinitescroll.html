@@ -1,0 +1,105 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Infinite Scroll</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="img//favicon.ico">
+    </head>
+    <body class="" style="background-image: url(img/grid-bg.jpg);">
+       <!-- Loader -->
+        <div id="loader" >
+
+            <div class="fixed top-0 left-0 bottom-0 right-0 bg-synth-aqua opacity-70 z-20"></div>
+            <img src="img/loader.svg" alt="loading" class="z-30  fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-none  ">
+        </div>
+ 
+    <!-- Nav Sections  -->
+        <!--Hide/Show Class  -->
+        <div id="" class="nav md:block flex flex-col">
+            <div id="hamburger" class=" md:hidden w-full">
+                <span> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 float-right pr-4 relative right-0 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  </span>
+            </div>
+            <!-- Nav Links -->
+            <div id="navlinks" class="nav flex flex-col hidden md:block" >
+
+
+                <span class="group">
+                    <a href="1_hideshow.html" class="m-4 group-hover:text-synth-orange">Hide/Show</a>
+                </span>
+                <!--Fonts  -->
+                <span class="group">
+                    <a href="2_fonts.html" class="m-4 group-hover:text-synth-orange">Fonts</a>
+                </span>
+                <!--Cards  -->
+                <span class="group">
+                    <a href="3_cards.html" class="m-4 group-hover:text-synth-orange">Cards</a>
+                </span>
+                <!--Loaders  -->
+                <span class="group">
+                    <a href="4_loaders.html" class="m-4 group-hover:text-synth-orange">Loaders</a>
+                </span>
+                <!--Forms  -->
+                <span class="group">
+                    <a href="5_forms.html" class="m-4 group-hover:text-synth-orange">Forms</a>
+                </span>
+            </div>
+        </div>
+    
+   
+
+    <!-- Content Wrapper -->
+    <main class="">
+        <div class="">
+
+        
+            <!-- Main Content -->
+        
+            <h1 class="maincontentheader h-1/6">Infinite Scroll</h1>
+            <div id="imgcontainer" class="imgcontainer ">    
+
+            </div>
+
+                
+
+                
+        </div>
+            
+    </main>
+
+
+</body>
+<script  defer="defer" src="script.js"></script>
+<script  defer="defer" src="index.js"></script>
+<script  defer="defer" src="infinitescroll.js"></script>
+      <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
+  <script>
+      AOS.init({
+    delay: 200, // values from 0 to 3000, with step 50ms
+    duration: 1500, // values from 0 to 3000, with step 50ms
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them 
+  });
+    </script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navlinks = document.getElementById("navlinks");
+
+        hamburger.addEventListener('click', () => {
+            navlinks.classList.contains("hidden")? navlinks.classList.remove('hidden') : navlinks.classList.add("hidden")
+        })
+    </script>
+</html>
+        
+<!-- Main Content -->
+
+<h1 class="maincontentheader h-1/6">Infinite Scroll</h1>
+<div id="imgcontainer" class="imgcontainer ">    
+
+</div>

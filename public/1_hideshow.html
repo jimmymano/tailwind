@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="img//favicon.ico">
+    </head>
+    <body class="text-gray-500">
+    <div class="nav absolute">
+    
+        <span>
+            <a href="index.html">Home</a>
+        </span>
+        <a href="#"></a>
+        <a href="#"></a>
+    
+    </div>
+   
+
+     
+    <!-- Hide/Show IF Class -->
+    <div class="formcontainer"  style="background-image: url(img/neon-synthwave-grid-lines-wallpaper-f990b8ed81cafd4b4697a80f9001f6bd.jpg)">
+        <h1 class="label text-5xl text-center font-outrun">Hide/Show </h1>
+        <div class="form" >
+            
+            <button  id="button" class="submitbtn mb-4" >Submit</button>
+            <div id="field" class="field hidden">
+
+                <label for="firstname" class="label" >Hide/Show Element:</label><br>
+                <input type="text" id="firstname" name="firstname" class="input"> <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script  defer="defer" src="script.js"></script>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
+<script>
+  AOS.init({
+delay: 200, // values from 0 to 3000, with step 50ms
+duration: 1500, // values from 0 to 3000, with step 50ms
+once: false, // whether animation should happen only once - while scrolling down
+mirror: false, // whether elements should animate out while scrolling past them 
+});
+</script>
+</html>

@@ -1,184 +1,103 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./fonts/pac-man-logo/pac-man-logo.ttf">
-</head>
-<body class="text-gray-500">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Examples Index</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="img//favicon.ico">
+    </head>
+    <body class="text-gray-500">
+    <div class="nav absolute z-10">
+    <!-- Nav Sections  -->
+        <!--Hide/Show Class  -->
+        <span>
+            <a href="1_hideshow.html">Hide/Show</a>
+        </span>
+        <!--Fonts  -->
+        <span>
+            <a href="2_fonts.html">Fonts</a>
+        </span>
+        <!--Cards  -->
+        <span>
+            <a href="3_cards.html">Cards</a>
+        </span>
+        <!--Loaders  -->
+        <span>
+            <a href="4_loaders.html">Loaders</a>
+        </span>
+        <!--Forms  -->
+        <span>
+            <a href="5_forms.html">Forms</a>
+        </span>
+        <!--Infinite Scroll  -->
+        <span>
+            <a href="6_infinitescroll.html">Infinite Scroll</a>
+        </span>
+    </div>
 
     <!-- Content Wrapper -->
-    <div class="grid md:grid-cols-3">
-        <!-- Navbar -->
-        <div class="col-span-1">
-            <nav>
-                <!-- Nav Title -->
-                <div class="flex justify-between items-center text-4xl p-10 font-pacman text-synth-darkblue  sm:text-synth-orange md:text-synth-aqua lg:text-synth-pink">   
-                    <h1>
-                        <a href="/">Title</a> 
-                    </h1>
-                    <div class="px-4 cursor-pointer md:hidden" id="burger">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                          </svg>
-                          
-                    </div>
-                </div>
-                <!-- Links -->
-                <ul class="hidden md:block" id="menu">
-                    <!-- Outrun -->
-                    <li class=" text-4xl text-primary p-10 font-outrun md:block">
-                        <a href="#">
-                            <span>Outrun</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 inline-block">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
-                              </svg>
-                              
-                        </a>
-                    </li>
-                    <!-- Brat-->
-                    <li class="text-6xl  text-synth-pink p-10 font-brat  md:block">
-                        <a href="#">
-                            <span>Brat</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 inline-block">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                              </svg>                              
-                        </a>
-                    </li>
-                    <!-- Lazer84 -->
-                    <li class="  text-synth-fuschia p-10 font-lazer84 ">
-                        <a href="#">
-                            <span>Lazer84</span>
-                        </a>
-                    </li>
-                    <!-- indelible -->
-                    <li class=" text-synth-red p-10 font-indelible ">
-                        <a href="#">
-                            <span>Indelible</span>
-                        </a>
-                    </li>
-                    <!-- RoadRage -->
-                    <li class=" text-synth-aqua p-10 font-roadrage ">
-                        <a href="#">
-                            <span>Road Rage</span>
-                        </a>
-                    </li>
-                    <!-- Streamster -->
-                    <li class="  text-synth-darkblue p-10 font-streamster ">
-                        <a href="#">
-                            <span>Streamster</span>
-                        </a>
-                    </li>
-                    <!-- Commando -->
-                    <li class="  text-synth-orange p-10 font-commando ">
-                        <a href="#">
-                            <span>Commando</span>
-                        </a>
-                    </li>
-                    <!-- Flashback -->
-                    <li class="  text-synth-pink p-10 font-flashback">
-                        <a href="#">
-                            <span>Flash Back</span>
-                        </a>
-                    </li>
-                    <!-- Rocket -->
-                    <li class="  text-synth-aqua p-10 font-rocket">
-                        <a href="#">
-                            <span>Rocket</span>
-                        </a>
-                    </li>
-                    <!-- Edit -->
-                    <li class="  text-synth-red p-10 font-edit">
-                        <a href="#">
-                            <span>Edit</span>
-                        </a>
-                    </li>
+    <div class="grid md:grid-cols-3 hidden mt-16">
 
-                </ul>
-            </nav>
-        </div>
-        <!-- End Navbar -->
+        
 
         <!-- Main Content -->
         <main class="px-16 py-12 md:col-span-2">
-            <!-- Flexbox Example -->
-            <div class ="flex justify-center text-6xl font-rocket text-synth-aqua ">
-                <a href="#"  class="buttonhover btn  bg-synth-darkerblue hover:bg-synth-aqua tracking-big">Jimmy</a>
-                <span></span>
-                <a href="#" class="buttonhover btn border-2 ml-6 border-synth-darkerblue bg-synth-darkerblue hover:bg-synth-aqua">Example</a>
-            </div>
 
-            <!--  Cards -->
-            <div>
-                <!-- Logo -->
-                <div class="flex p-32 grid bg-gray-800">
-                    <h4 data-aos="fade-left" data-aos-delay="1200" class=" pb-2 font-semibold  font-edit text-8xl tracking-big text-synth-aqua justify-center text-center animate-pulse">Jimmy</h4>
-                    <h4 class="text-9xl font-brat text-synth-pink block text-right pr-12 -mt-9 transform -rotate-12 animate-pulse">Mano</h4>
-                    
-                    <div class="block">
-                      
-                          <div class="flex justify-center pt-14 group">
 
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8  text-white pt-2  hidden group-hover:block">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                                </svg>
-                              <span class="text-4xl font-vcr text-white  text-center  ">ABOUT</span>
-                          </div>
-                          <div class="flex justify-center group ">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8  text-white pt-2  hidden group-hover:block">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                              </svg>
-                            <span class="text-4xl font-vcr text-white  text-center inline-block ">DEMOS</span>
-                        </div>
-                        <div class="flex justify-center group ">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8  text-white pt-2  hidden group-hover:block">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                              </svg>
-                            <span class="text-4xl font-vcr text-white  text-center inline-block ">LINKEDIN</span>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="mt-8 grid md:grid-cols-2">
-                    <!-- Card 1 -->
-                    <div class="card cardhover">
-                        <img src="img/1.jpg" alt="" class="cardimg ">
-                        <div class="m-4">
-                            <span class="cardtitle">Card Title</span>
-                            <span class="block">Card Description</span>
-                        </div>
-                        <div class="badge">
-                            <span>Badge</span>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="card cardhover">
-                        <img src="img/2.jpg" alt="" class="cardimg">
-                        <div class="m-4">
-                            <span class="cardtitle">Card Title</span>
-                            <span class="block">Card Description</span>
-                        </div>
-                        <div class="badge">
-                            <span>Badge</span>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-                </div>
-            </div>
         </main>
 
     </div>
 
-    <script src="index.js"></script>
-</body>
+
+                            <!-- Forms -->
+
+                            <div class="flex justify-center items-center h-full " style="background-image: url(img/neon-synthwave-grid-lines-wallpaper-f990b8ed81cafd4b4697a80f9001f6bd.jpg);">
+
+
+
+                                                        <!-- Form Validation -->
+
+                                                        <div class="grid grid-cols-2 z-0">
+
+
+
+      
+                                                        <!-- Javascript Validation -->
+                                                        <div class="formcontainer col-span-2 "  style="background-image: url(img/neon-synthwave-grid-lines-wallpaper-f990b8ed81cafd4b4697a80f9001f6bd.jpg)">
+                                                            <h1 class="label text-5xl text-center font-outrun">Javascript Validation </h1>
+                                                            <!-- Form -->
+                                                            <form id="form"class="form my-auto w-full text-center" novalidate >
+                                                                <!-- Password 1 -->
+                                                                <div id="field" class="field ">
+    
+                                                                    <label for="password1" class="label " >Create Password:</label><br>
+                                                                    <input type="password" id="password1" name="password1" class="input2" required minlength="4" maxlength="100" > <br>
+                                                                </div>
+                                                                <!-- Password2 -->
+                                                                <div id="field" class="field ">
+    
+                                                                    <label for="password2" class="label " >Confirm Password:</label><br>
+                                                                    <input type="password" id="password2" name="password2" class="input2" required minlength="4" maxlength="100"  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="Please include at least uppercase, 1 lowercase, and 1 number"> <br>
+                                                                </div>
+                                                                <!-- Submit Btn -->
+    
+                                                                <button type="submit"  id="button2" class="submitbtn2 mb-4" >Submit</button>
+                                                                <!-- Error Message Container -->
+                                                                <div class="text-center errorcontainer hidden" id="errorcontainer">
+                                                                <span></span>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        </div>
+
+
+
+
+
+                                                    </body>
+                                                    <script  defer="defer" src="script.js"></script>
+                                                    <script  defer="defer" src="index.js"></script>
       <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
   <script>
