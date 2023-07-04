@@ -626,10 +626,6 @@ video {
   margin-bottom: auto;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
-}
-
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -640,10 +636,6 @@ video {
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mt-3{
-  margin-top: 0.75rem;
 }
 
 .mt-6{
@@ -817,15 +809,6 @@ video {
   background-color: rgb(255 56 100 / var(--tw-bg-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-70{
-  --tw-bg-opacity: 0.7;
-}
-
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -855,14 +838,6 @@ video {
 
 .p-10{
   padding: 2.5rem;
-}
-
-.p-2{
-  padding: 0.5rem;
-}
-
-.p-4{
-  padding: 1rem;
 }
 
 .p-5{
@@ -940,15 +915,6 @@ video {
   font-family: streamster, sans-serif;
 }
 
-.font-vcr{
-  font-family: vcr, sans-serif;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -984,11 +950,6 @@ video {
 
 .lowercase{
   text-transform: lowercase;
-}
-
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gray-500{
@@ -1601,6 +1562,43 @@ video {
   padding: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hoveranimate{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.hoveranimate:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.addbtn{
+  margin-top: 0.75rem;
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  font-family: vcr, sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.columnheader{
+  margin: auto;
+  width: 100%;
+  background-size: cover;
+  padding: 1rem;
+  text-align: center;
+  font-family: roadrage, sans-serif;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .group:hover .group-hover\:text-synth-orange{

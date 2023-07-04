@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Infinite Scroll</title>
+        <title>Kanban</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/x-icon" href="img//favicon.ico">
     </head>
@@ -65,6 +65,144 @@
 
             </div>
 
+            <!-- Content  -->
+<div class="dragcontainer bg-cover" >
+    <ul class="draglist flex ">
+        
+            <!-- Backlog Column -->
+            <li class="dragcolumn" style="background-image: url(img/7.jpg);">
+                <span class="header w-full  ">
+                    <h1 class="columnheader text-synth-pink ">Backlog</h1>
+                </span>
+                <!-- Backlog Content -->
+                <div id="backlogcontent" class="overflow-y-auto max-h-52 scrollbar scrollbar-thumb-synth-pink text-synth-pink scrollbar-track-white  ">
+                    <ul class="dragitemlist " id="backloglist">
+                        <li class="dragitem ">Testing</li>
+                        <li class="dragitem">Testing</li>
+                        <li class="dragitem">Testing</li>
+                        <li class="dragitem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi repellendus necessitatibus odit commodi aliquid veritatis enim quaerat quas nostrum in aspernatur molestiae facilis at corporis soluta possimus libero est!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut eius unde qui expedita atque, nisi, hic repudiandae numquam explicabo illum iste? Vel odio dolorum dolores ab error consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sed obcaecati dolore quaerat nihil, nulla ullam animi reiciendis hic quas aliquid nam iusto illum exercitationem distinctio aspernatur! Commodi, autem adipisci! </li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="addbtngroup ">
+                    <div class="addbtn hoveranimate bg-synth-pink ">
+                        <span class="plussign"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            </span><span class="plussign ">Add Item</span>
+
+                    </div>
+                    <div class="addbtnsolid">
+                        <span>Save item</span>
+                    </div>
+                    <div class="addcontainer">
+                        <div class="additem"></div>
+                    </div>
+                </div>
+            
+            </li>
+
+            <!-- In Progress Column -->
+            <li class="dragcolumn" style="background-image: url(img/7.jpg);">
+                <span class="header w-full  ">
+                    <h1 class="columnheader text-synth-orange ">Progress</h1>
+                </span>
+                <!-- Progress Content -->
+                <div id="progresscontent" class="overflow-y-auto max-h-52 scrollbar scrollbar-thumb-synth-orange text-synth-orange scrollbar-track-white  ">
+                    <ul class="dragitemlist " id="progresslist">
+                        <li class="dragitem ">Testing</li>
+                        <li class="dragitem ">Testing</li>
+                        <li class="dragitem ">Testing</li>
+                        <li class="dragitem ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi repellendus necessitatibus odit commodi aliquid veritatis enim quaerat quas nostrum in aspernatur molestiae facilis at corporis soluta possimus libero est!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut eius unde qui expedita atque, nisi, hic repudiandae numquam explicabo illum iste? Vel odio dolorum dolores ab error consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sed obcaecati dolore quaerat nihil, nulla ullam animi reiciendis hic quas aliquid nam iusto illum exercitationem distinctio aspernatur! Commodi, autem adipisci! </li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="addbtngroup ">
+                    <div class="addbtn bg-synth-orange hoveranimate">
+                        <span class="plussign"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            </span><span class="plussign ">Add Item</span>
+
+                    </div>
+                    <div class="addbtnsolid">
+                        <span>Save item</span>
+                    </div>
+                    <div class="addcontainer">
+                        <div class="additem"></div>
+                    </div>
+                </div>
+            
+            </li>
+
+            <!-- Complete Column -->
+            <li class="dragcolumn " style="background-image: url(img/7.jpg);">
+                <span class="header w-full  ">
+                    <h1 class="columnheader text-synth-aqua">Complete</h1>
+                </span>
+                <!-- Complete Content -->
+                <div id="completecontent" class="overflow-y-auto max-h-52 scrollbar scrollbar-thumb-synth-aqua text-synth-aqua  scrollbar-track-white  ">
+                    <ul class="dragitemlist" id="completelist">
+                        <li class="dragitem">Testing</li>
+                        <li class="dragitem">Testing</li>
+                        <li class="dragitem">Testing</li>
+                        <li class="dragitem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi repellendus necessitatibus odit commodi aliquid veritatis enim quaerat quas nostrum in aspernatur molestiae facilis at corporis soluta possimus libero est!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut eius unde qui expedita atque, nisi, hic repudiandae numquam explicabo illum iste? Vel odio dolorum dolores ab error consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sed obcaecati dolore quaerat nihil, nulla ullam animi reiciendis hic quas aliquid nam iusto illum exercitationem distinctio aspernatur! Commodi, autem adipisci! </li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="addbtngroup ">
+                    <div class="addbtn bg-synth-aqua hoveranimate">
+                        <span class="plussign"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        </span><span class="plussign ">Add Item</span>
+
+                    </div>
+                    <div class="addbtnsolid">
+                        <span>Save item</span>
+                    </div>
+                    <div class="addcontainer">
+                        <div class="additem"></div>
+                    </div>
+                </div>
+
+            </li>
+
+            <!-- On Hold -->
+            <li class="dragcolumn flex flex-1 flex-col p-5 m-2 onholdcolumn border-white border-2 " style="background-image: url(img/7.jpg);">
+                <span class="header w-full  ">
+                    <h1 class="columnheader text-synth-red  ">On Hold</h1>
+                </span>
+                <!-- On Hold Content -->
+                <div id="onholdcontent" class="overflow-y-auto max-h-52 scrollbar scrollbar-thumb-synth-red text-synth-red scrollbar-track-white  ">
+                    <ul class="dragitemlist" id="onholdlist">
+                        <li class="dragitem">Testing</li>
+                        <li class="dragitem">Testing</li>
+                        <li class="dragitem">Testing</li>
+                        <li class="dragitem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi repellendus necessitatibus odit commodi aliquid veritatis enim quaerat quas nostrum in aspernatur molestiae facilis at corporis soluta possimus libero est!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut eius unde qui expedita atque, nisi, hic repudiandae numquam explicabo illum iste? Vel odio dolorum dolores ab error consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sed obcaecati dolore quaerat nihil, nulla ullam animi reiciendis hic quas aliquid nam iusto illum exercitationem distinctio aspernatur! Commodi, autem adipisci! </li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="addbtngroup ">
+                    <div class="addbtn  bg-synth-red hoveranimate ">
+                        <span class="plussign"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            </span><span class="plussign ">Add Item</span>
+
+                    </div>
+                    <div class="addbtnsolid">
+                        <span>Save item</span>
+                    </div>
+                    <div class="addcontainer">
+                        <div class="additem"></div>
+                    </div>
+                </div>
+
+            </li>
+
+    </ul>
+</div>
                 
 
                 
@@ -99,142 +237,4 @@
         
 
 
-<!-- Content  -->
-<div class="dragcontainer bg-cover" >
-    <ul class="draglist flex ">
-        
-  <!-- Backlog Column -->
-<li class="dragcolumn" style="background-image: url(img/7.jpg);">
-      <span class="header w-full  ">
-          <h1 class="text-5xl text-center m-auto w-full p-4 text-synth-pink font-roadrage  bg-cover  ">Backlog</h1>
-      </span>
-      <!-- Progress Content -->
-      <div id="progresscontent" class="overflow-y-auto max-h-52 scrollbar scrollbar-thumb-synth-pink text-synth-pink scrollbar-track-white  ">
-          <ul class="dragitemlist " id="progresslist">
-              <li class="dragitem ">Testing</li>
-              <li class="dragitem">Testing</li>
-              <li class="dragitem">Testing</li>
-              <li class="dragitem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi repellendus necessitatibus odit commodi aliquid veritatis enim quaerat quas nostrum in aspernatur molestiae facilis at corporis soluta possimus libero est!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut eius unde qui expedita atque, nisi, hic repudiandae numquam explicabo illum iste? Vel odio dolorum dolores ab error consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sed obcaecati dolore quaerat nihil, nulla ullam animi reiciendis hic quas aliquid nam iusto illum exercitationem distinctio aspernatur! Commodi, autem adipisci! </li>
-          </ul>
-      </div>
-      <!-- Add Button Group -->
-      <div class="addbtngroup ">
-          <div class="addbtn flex p-2 w-full mt-3  bg-synth-pink text-black font-vcr t">
-              <span class="plussign"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                </svg>
-                </span><span class="plussign ">Add Item</span>
 
-          </div>
-          <div class="addbtnsolid">
-              <span>Save item</span>
-          </div>
-          <div class="addcontainer">
-              <div class="additem"></div>
-          </div>
-      </div>
-  
-</li>
-
-<!-- In Progress Column -->
-<li class="dragcolumn" style="background-image: url(img/7.jpg);">
-      <span class="header w-full  ">
-          <h1 class="text-5xl text-center m-auto w-full p-4 text-synth-orange font-roadrage  bg-cover  ">Progress</h1>
-      </span>
-      <!-- Progress Content -->
-      <div id="progresscontent" class="overflow-y-auto max-h-52 scrollbar scrollbar-thumb-synth-orange text-synth-orange scrollbar-track-white  ">
-          <ul class="dragitemlist " id="progresslist">
-              <li class="dragitem ">Testing</li>
-              <li class="dragitem ">Testing</li>
-              <li class="dragitem ">Testing</li>
-              <li class="dragitem ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi repellendus necessitatibus odit commodi aliquid veritatis enim quaerat quas nostrum in aspernatur molestiae facilis at corporis soluta possimus libero est!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut eius unde qui expedita atque, nisi, hic repudiandae numquam explicabo illum iste? Vel odio dolorum dolores ab error consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sed obcaecati dolore quaerat nihil, nulla ullam animi reiciendis hic quas aliquid nam iusto illum exercitationem distinctio aspernatur! Commodi, autem adipisci! </li>
-          </ul>
-      </div>
-      <!-- Add Button Group -->
-      <div class="addbtngroup ">
-          <div class="addbtn flex p-2 w-full mt-3  bg-synth-orange text-black font-vcr t">
-              <span class="plussign"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                </svg>
-                </span><span class="plussign ">Add Item</span>
-
-          </div>
-          <div class="addbtnsolid">
-              <span>Save item</span>
-          </div>
-          <div class="addcontainer">
-              <div class="additem"></div>
-          </div>
-      </div>
-  
-</li>
-
-<!-- Complete Column -->
-<li class="dragcolumn " style="background-image: url(img/7.jpg);">
-      <span class="header w-full  ">
-          <h1 class="text-5xl text-center m-auto w-full p-4 text-synth-aqua font-roadrage  bg-cover  ">Complete</h1>
-      </span>
-      <!-- Complete Content -->
-      <div id="progresscontent" class="overflow-y-auto max-h-52 scrollbar scrollbar-thumb-synth-aqua text-synth-aqua  scrollbar-track-white  ">
-          <ul class="dragitemlist" id="progresslist">
-              <li class="dragitem">Testing</li>
-              <li class="dragitem">Testing</li>
-              <li class="dragitem">Testing</li>
-              <li class="dragitem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi repellendus necessitatibus odit commodi aliquid veritatis enim quaerat quas nostrum in aspernatur molestiae facilis at corporis soluta possimus libero est!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut eius unde qui expedita atque, nisi, hic repudiandae numquam explicabo illum iste? Vel odio dolorum dolores ab error consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sed obcaecati dolore quaerat nihil, nulla ullam animi reiciendis hic quas aliquid nam iusto illum exercitationem distinctio aspernatur! Commodi, autem adipisci! </li>
-          </ul>
-      </div>
-      <!-- Add Button Group -->
-      <div class="addbtngroup ">
-          <div class="addbtn flex p-2 w-full mt-3  bg-synth-aqua text-black font-vcr ">
-              <span class="plussign"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                </svg>
-                </span><span class="plussign ">Add Item</span>
-
-          </div>
-          <div class="addbtnsolid">
-              <span>Save item</span>
-          </div>
-          <div class="addcontainer">
-              <div class="additem"></div>
-          </div>
-      </div>
-  
-</li>
-
-<!-- On Hold -->
-<li class="dragcolumn flex flex-1 flex-col p-5 m-2 progresscolumn border-white border-2 " style="background-image: url(img/7.jpg);">
-      <span class="header w-full  ">
-          <h1 class="text-5xl text-center m-auto w-full p-4 text-synth-red font-roadrage  bg-cover  ">On Hold</h1>
-      </span>
-      <!-- Progress Content -->
-      <div id="progresscontent" class="overflow-y-auto max-h-52 scrollbar scrollbar-thumb-synth-red text-synth-red scrollbar-track-white  ">
-          <ul class="dragitemlist" id="progresslist">
-              <li class="dragitem">Testing</li>
-              <li class="dragitem">Testing</li>
-              <li class="dragitem">Testing</li>
-              <li class="dragitem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi repellendus necessitatibus odit commodi aliquid veritatis enim quaerat quas nostrum in aspernatur molestiae facilis at corporis soluta possimus libero est!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut eius unde qui expedita atque, nisi, hic repudiandae numquam explicabo illum iste? Vel odio dolorum dolores ab error consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sed obcaecati dolore quaerat nihil, nulla ullam animi reiciendis hic quas aliquid nam iusto illum exercitationem distinctio aspernatur! Commodi, autem adipisci! </li>
-          </ul>
-      </div>
-      <!-- Add Button Group -->
-      <div class="addbtngroup ">
-          <div class="addbtn flex p-2 w-full mt-3  bg-synth-red text-black font-vcr ">
-              <span class="plussign"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                </svg>
-                </span><span class="plussign ">Add Item</span>
-
-          </div>
-          <div class="addbtnsolid">
-              <span>Save item</span>
-          </div>
-          <div class="addcontainer">
-              <div class="additem"></div>
-          </div>
-      </div>
-  
-</li>
-
-    </ul>
-</div>
-</div>
