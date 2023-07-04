@@ -19,10 +19,12 @@ const completeList = document.getElementById('completelist')
 const onHoldList = document.getElementById('onholdlist')
 
 // Initialize Arrays: stores data for each of our lists
+// listArrays = list of all the other arrays, this is defined in updateSavedColumns()
 let backlogListArray = [];
 let progressListArray = [];
 let completeListArray = [];
 let onholdListArray = [];
+let listArrays = [];
 
 // Drag Functionality
 
@@ -42,11 +44,25 @@ function getSavedColumns(){
 }
 
 // Set Local Storage Arrays, saves whatever is set in getSavedColumns to local storage
+// localstorage returns an object 
+
+// localStorage object allows you to save key/value pairs in the browser
+
+// Remove data from Local Storage: localStorage.removeItem(key)
+
+
+// Remove data from Local Storage: localStorage.clear()
+
+
+// Save data to Local Storage localStorage.setItem(key,value)
+
+// Read data from Local Storage: let x = localStorage.getItem(key,vaue)
 function updateSavedColumns(){
-    localStorage.setItem('backlogItems', JSON.stringify(backlogListArray));
-    localStorage.setItem('progressItems', JSON.stringify(progressListArray));
-    localStorage.setItem('completeItems', JSON.stringify(completeListArray));
-    localStorage.setItem('onholdItems', JSON.stringify(onholdListArray));
+    listArrays = [backlogListArray,progressListArray,completeListArray,onholdListArray];
+    const arrayNames = ['backlog','progress','complete','onhold'];
+    arrayNames.forEach((arrayName,index) =>{
+        localStorage.setItem(`${arrayName}Items`, JSON.stringify(listArrays[index]))
+    });
 }
 getSavedColumns();
 updateSavedColumns();
